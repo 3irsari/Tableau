@@ -1,0 +1,93 @@
+🧠 Dashboard Design Principles in Business Intelligence Projects
+
+By Birce SARI — Business Intelligence Specialist & Data Analyst
+
+📝 Introduction
+In today’s data-driven organizations, dashboards are not just visual summaries—they are decision-making engines. The quality of a dashboard’s design can significantly impact how effectively stakeholders understand insights and act on them. Drawing from my experience at Zorlu Holding and BI design frameworks such as the International Business Communication Standards (IBCS) and IBM’s Business Intelligence Guidelines, I’ve refined three principles that consistently lead to effective dashboards.
+These principles aim to balance usability with strategic insight, making dashboards tools not just for reporting but for proactive business planning.
+
+🔑 Principle 1: Use Information Architecture to Guide Attention
+    "Structure is not a trend. It's a necessity." – IBCS
+What I apply:
+I design dashboards with clear hierarchies, allowing users to scan information from top-level KPIs down to granular trends—often using a top-down layout or Z-pattern layout. I segment content using grid structures and consistent spacing.
+
+Why it matters:
+Users typically spend seconds deciding where to focus on a dashboard. IBM (2020) stresses that dashboards must align with cognitive processing patterns, allowing for immediate recognition of business status without deep exploration.
+
+“Our dashboards will be sharing a systematic schema of colors, layout, labels, filters, legends, and paths that everyone in the company can understand at a fast pace. The most important part is where to start reading the dashboard as described by Hichert & Faißt, in 2022, from the left top corner to the right bottom corner. And their standards are implemented in our visuals accordingly. Only in our Executive level reports the logo is the biggest and takes part in the left upper corner whereas in other front office reports, they are on the right bottom corner, and the back office report like the data exploration dashboard, that formatting is neglected. Title shares the first row with other general idea-giver elements, like filters or legends if they are applicable for generality of the views. If filters and legends are specifically acting on separate views, then they are added in their container or any adjacent part that the layout allows. KPI cards are placed under title (left top corner after the title’s container), to put the highlights on the main improvements. The layout for the views are conducted with two rows that general context is given in the first row and the second row is more detailed understandings of the reports. Filters are located in the left top corner that can be accessible easily. Easy breakdown or cumulate buttons appear for the user to move through the data groups.”​ (Sari, 2024)
+
+Standards referenced:
+    IBCS principle of UNIFY (use consistent positioning)
+    IBM Design for AI: Cognitive Load Management (IBM, 2020)
+
+Design example:
+Level | Content Type | Example
+1 | KPIs & Warnings | % of stores below sales quota
+2 | Trends & Comparisons | YoY performance bar-line chart
+3 | Details & Drill-downs | Store-level breakdown by region
+
+🎯 Principle 2: Choose Charts That Clarify, Not Impress
+    “Good visualizations answer questions at a glance.” – Stephen Few
+What I apply:
+Each visualization is selected based on the data’s analytical function:
+
+    For comparisons → bar or column charts
+    For trends → line charts
+    For part-to-whole → stacked or waterfall charts
+
+I actively avoid chartjunk (3D, shadows, excessive colors) to reduce cognitive friction and instead rely on the IBCS recommendation to "simplify to amplify".
+
+Why it matters:
+Stephen Few (2009) emphasizes that visual clutter hides patterns. IBM concurs: simplicity drives understanding, not complexity.
+
+Standards referenced:
+    IBCS principle of EXPRESS (choose correct chart types)
+    Few, S. (2009). Now You See It: Simple Visualization Techniques for Quantitative Analysis.
+
+Example:
+Goal | Poor Chart | Better Chart
+Sales vs Target | 3D Pie Chart | Bullet Chart (IBCS)
+Time trend | Area Chart | Line Chart
+Store rankings | Donut Chart | Sorted Bar Chart
+
+🧩 Principle 3: Provide Context and Comparison, Not Just Numbers
+    "Data without context is noise." – Hichert + Partner (2020)
+What I apply:
+I embed comparison baselines—such as previous periods, forecasts, or benchmarks—directly into visuals using IBCS-approved notations (e.g.,
+previous year as dotted line, forecast as triangle marker). I also use traffic lights, alert icons, and delta indicators to show what’s changed and what needs action.
+
+Why it matters:
+Many dashboards fail by simply presenting raw metrics. As the IBCS SUCCESS formula suggests, showing relationships and expectations (not just absolutes) enhances comprehension and accelerates decisions.
+
+"Logos, parameters, filters, legends, notes, and annotations are used to enhance the understanding of each graph and increase the readability of the visuals. The dimensions of the logo will vary depending on its importance to the audience. For example, the executive level may view the dashboards with outsiders so the logo needs to be in a bigger portion whereas the company departments will be using the dashboards in their daily operations which is known by them. Since 1643*861px is our company screens’ dimensions, our dashboards will be generated accordingly." (Sari, 2024)
+
+Standards referenced:
+    IBCS principle of COMPARE (visualize deviations)
+    Hichert + Partner (2020). SUCCESS: The IBCS® Notation Manual.
+
+Example before/after:
+Without Context | With Context (IBCS style)
+Revenue: €1.2M | Revenue: €1.2M ↑ €0.3M vs LY ▲ 25%
+Store Performance: 60% | Store Performance: 60% ⛔ (Target: 85%)
+
+🛠 Tools & Techniques
+I implement these principles primarily using:
+    Power BI and Tableau (daily)
+    SAP Analytics Cloud and Qlik Sense (experimented with during vendor evaluation projects)
+I also use Figma for dashboard wireframing and DAX or Calculated Fields for dynamic indicators and thresholds.
+
+"Every company has different needs and tailored solutions, even though they share similar performance indicators. Besides our KPIs, considered in the introduction, we need to control our system with detailed performance indicators and checkpoints. To be able to study our business and customers, we need to describe our other indications which will help us to control our KPIs; AOV, average purchase value, average ship time, customers to churn (days), total revenue, sales growth rate, gross profit margin, profit per order. These metrics collectively provide insights into customer habits, operational efficiency, and overall financial health." (Sari, 2024)
+
+📚 Recommended Resources
+    📘 International Business Communication Standards (IBCS®) – https://www.ibcs.com
+    📘 Few, S. (2009). Now You See It
+    📘 Hichert + Partner. (2020). SUCCESS Notation Manual
+    📘 Hichert, R. and Faißt, J. (2022) IBCS® International Business Communication Standards IBCS® version 1.2.
+    🌐 IBM Design for AI – https://www.ibm.com/design/ai/
+    📘 Evergreen, S. D. H. (2019). Effective Data Visualization: The Right Chart for the Right Data
+		🌟 Birce Sari (2024). Designing a sales Tableau Dashboard for a chosen company
+
+🤝 Closing Thoughts
+In business intelligence, a dashboard is not a report—it’s a conversation. These three principles have helped me turn dense data into meaningful insights that drive action. Whether you're building for operations, sales, or executives, apply these principles to build dashboards that do more than look good—they work hard.
+
+Feel free to connect or discuss more on LinkedIn (https://www.linkedin.com/in/birce-sari/) or check out my dashboards and designs in the repo folder.
